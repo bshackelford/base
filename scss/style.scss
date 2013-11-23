@@ -1,0 +1,64 @@
+/*************************************************
+*   VENDOR DEPENDENCIES                          *
+*************************************************/
+
+@import "compass/css3";
+
+
+/*************************************************
+*   AUTHORED DEPENDENCIES                        *
+*************************************************/
+
+@import "global/variables/color";
+@import "global/variables/links";
+@import "global/variables/typography";
+@import "global/variables/grid";
+
+@import "global/mixins/typography";
+@import "global/mixins/mq";
+
+@import "global/functions";
+
+
+/*************************************************
+*   VENDOR                                       *
+*************************************************/
+
+@import "vendor/normalize";
+
+
+/*************************************************
+*   BASE                                         *
+*************************************************/
+
+@import "base/base";
+@import "base/typography";
+
+@import "global/extends";
+
+
+/*************************************************
+*   LAYOUT                                       *
+*************************************************/
+
+@import "layout/grid";
+@import "layout/layout";
+
+
+/*************************************************
+*   MODULES                                      *
+*************************************************/
+// only include the modules this project calls for
+
+@import "module/menu";
+@import "module/modal";
+
+
+/*************************************************
+*   STATES                                       *
+*************************************************/
+// global states, include module-specific states 
+// with their respective module
+
+@import "state/states";
+

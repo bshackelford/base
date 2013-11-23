@@ -1,0 +1,32 @@
+.menu {
+    @extend %clearfix;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-item {
+    position: relative;
+    float: left;
+    width: 25%;
+
+    > a {
+        display: block;
+        padding: 2em 0;
+        border: none;
+    }
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    background: red;
+}
+.submenu-item {
+    color: red;
+
+}
+
+:hover > .submenu {
+    display: block;
+}

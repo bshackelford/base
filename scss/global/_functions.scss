@@ -1,0 +1,14 @@
+// Functions to make life easier
+
+
+// The wonderful target / context = result for RWD
+@function calcPercent($target, $container) {
+    @return ($target / $container) * 100%;
+}
+
+// Some Grid magic to calculate grid padding
+// Passes $cols being number of columns in a row (1/3 and 2/3 = 3 cols)
+// Returns a number to subtract from normal math at _grid.scss
+@function colDiff($cols) {
+    @return (($pad * $cols) - $pad) / $cols;
+}

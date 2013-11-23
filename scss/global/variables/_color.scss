@@ -1,0 +1,21 @@
+// Color Variables
+
+// Some cool Sass & Compass Color Functions you can use:
+//
+// rgb($red, $green, $blue);
+// rgba($red, $green, $blue, .5);
+// mix($color1, $color2, [$weight]);
+// adjust-hue($color, 20deg);
+// lighten($color, 20%);
+// darken($color, 20%);
+// saturate($color, 20%);
+// desaturate($color, 20%);
+// grayscale($color);
+// complement($color);
+// invert($color);
+// shade($color, 20%);
+// tint($color, 20%);
+
+
+$primary-color: #47cac2;
+$secondary-color: complement(tint($primary-color, 10%));

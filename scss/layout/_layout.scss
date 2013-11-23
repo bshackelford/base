@@ -1,0 +1,36 @@
+.l-container {
+    max-width: 960px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.l-header {
+    width: 100%;
+    background: #333;
+    color: white;
+}
+
+.l-main {
+    @extend %clearfix;
+    width: 100%;
+    padding: $pad-y/2 0;
+    background: #eee;
+}
+
+.l-content {
+    float: left;
+    width: 60%;
+}
+
+.l-sidebar {
+    float: right;
+    width: 30%;
+}
+
+.l-footer {
+    width: 100%;
+    padding: $pad-y/2 0;
+    background: $secondary-color;
+    color: white;
+    text-align: center;
+}
