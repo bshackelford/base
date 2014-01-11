@@ -1,10 +1,11 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     @include box-sizing(border-box);
 }
 
 html {
     min-height: 100%;
-    font-size: 62.5%;
 }
 
 body {
@@ -12,10 +13,11 @@ body {
     background: $secondary-color;
     color: #222;
     font-family: $serif;
-    @include fontSize(16);
+    @include font-size(16);
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img {

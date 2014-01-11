@@ -16,6 +16,26 @@
 // shade($color, 20%);
 // tint($color, 20%);
 
+// New defaults based on clrs.cc by MRMRS
+$aqua:    #7fdbff;
+$blue:    #0074d9;
+$navy:    #001f3f;
+$teal:    #39cccc;
+$green:   #2eCC40;
+$olive:   #3d9970;
+$lime:    #01ff70;
+$yellow:  #ffdc00;
+$orange:  #ff851b;
+$red:     #ff4136;
+$fuchsia: #f012be;
+$purple:  #b10dc9;
+$maroon:  #85144b;
+$white:   #fff;
+$silver:  #ddd;
+$gray:    #aaa;
+$black:   #111;
 
+
+// Site colors
 $primary-color: #47cac2;
 $secondary-color: complement(tint($primary-color, 10%));

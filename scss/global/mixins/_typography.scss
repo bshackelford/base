@@ -28,7 +28,7 @@
 // Font Size (px fallback with rem value)
 // (must set font-size on html to 62.5%)
 // --------------------------------------
-@mixin fontSize($size) {
-    font-size: $size + px;
-    font-size: ($size / 10) + rem;
+@mixin font-size($size) {
+    font-size: 0px + $size;
+    font-size: 0rem + $size / $base-font-size;
 }
