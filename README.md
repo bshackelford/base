@@ -35,9 +35,9 @@ $ sudo npm install --save-dev gulp
 
 ### 5. Install all Gulp dependencies
 
-**see gulpfile.js var imports to which to install*
+*See gulpfile.js var imports to which to install*
 
-**to install individual tasks: `$ sudo npm install --save-dev <task>`*
+*To install individual tasks: `$ sudo npm install --save-dev <task>`*
 
 ### 6. Run Gulp:
 ```
