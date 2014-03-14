@@ -33,13 +33,18 @@ To check if Node.js is already installed type `$ gulp -v` in Terminal to check v
 $ sudo npm install --save-dev gulp
 ```
 
-### 5. Install all Gulp dependencies
+### 5. Install all Gulp dependencies:
 
-*See gulpfile.js var imports to which to install*
+```
+$ sudo npm install .
+```
 
-*To install individual tasks: `$ sudo npm install --save-dev <task>`*
+*See gulpfile.js var imports to see individual task dependencies*
+
+*Prospectively, to install individual tasks: `$ sudo npm install --save-dev <task>`*
 
 ### 6. Run Gulp:
+
 ```
 $ gulp
 ```
@@ -47,3 +52,5 @@ $ gulp
 ^^^ The **default** task will run.
 
 To run individual tasks, use `$ gulp <task> <othertask>`
+
+***Production-ready** Gulp command: `$ gulp production`*
