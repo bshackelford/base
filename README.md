@@ -36,7 +36,7 @@ $ sudo npm install --save-dev gulp
 ### 5. Install all Gulp dependencies:
 
 ```
-$ sudo npm install .
+$ sudo npm install
 ```
 
 *See gulpfile.js var imports to see individual task dependencies*
@@ -53,4 +53,4 @@ $ gulp
 
 To run individual tasks, use `$ gulp <task> <othertask>`
 
-***Production-ready** Gulp command: `$ gulp production`*
+*__Production-ready__ Gulp command: `$ gulp production`*
