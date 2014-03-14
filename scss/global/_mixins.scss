@@ -1,0 +1,62 @@
+// FOUT (Flash Of Unstyled Text)
+// -----------------------------
+@mixin fout {
+    .wf-loading & {
+        visibility: hidden;
+    }
+    .wf-active &,
+    .wf-inactive & {
+        visibility: visible;
+    }
+    .lt-ie9 & {
+        visibility: visible !important;
+    }
+}
+
+@mixin font-stack-body {
+    font-family: $font-serif;
+    font-weight: $font-serif-normal;
+    font-style: normal;
+    line-height: 1.5;
+    @include fout;
+}
+@mixin font-stack-headings {
+    font-family: $font-sans-serif;
+    font-weight: $font-sans-serif-bold;
+    font-style: normal;
+    line-height: 1.2;
+    @include fout;
+}
+
+// Font Size (px fallback with rem value)
+// (must set font-size on html to 62.5%)
+// --------------------------------------
+@mixin font-size($size) {
+    font-size: 0px + $size;
+    font-size: 0rem + $size / 16;
+}
+
+// Media Queries
+// -------------
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media (max-width: $bp-small-max) { @content; }
+    }
+    @else if $point == medium {
+        @media (min-width: $bp-medium-min) { @content; }
+    }
+    @else if $point == large {
+        @media (min-width: $bp-large-min) { @content; }
+        @media print { @content; }
+        .lt-ie9 & { @content; } // <IE9 Support
+    }
+    @else if $point == x-large {
+        @media (min-width: $bp-x-large-min)  { @content; }
+    }
+    // Retina
+    @if $point == 2x {
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+            only screen and (min-moz-device-pixel-ratio: 1.5),
+            only screen and (min-device-pixel-ratio: 1.5) { @content; }
+    }
+}

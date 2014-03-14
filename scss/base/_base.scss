@@ -11,7 +11,7 @@ body {
     min-height: 100%;
     background: $secondary-color;
     color: #222;
-    font-family: $serif;
+    font-family: $sans-serif;
     @include fontSize(16);
     line-height: 1.5;
     text-rendering: optimizeLegibility;

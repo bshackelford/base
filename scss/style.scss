@@ -1,64 +1,33 @@
-/*************************************************
-*   VENDOR DEPENDENCIES                          *
-*************************************************/
+// ==============================================/
+//  GLOBAL DEPENDENCIES
+// ==============================================/
 
-@import "compass/css3";
+@import "global/vars",
+        "global/functions",
+        "global/mixins",
+        "global/extends";
 
+// ==============================================/
+//  BASE
+// ==============================================/
 
-/*************************************************
-*   AUTHORED DEPENDENCIES                        *
-*************************************************/
+@import "base/normalize",
+        "base/base",
+        "base/type",
+        "base/layout";
 
-@import "global/variables/color";
-@import "global/variables/links";
-@import "global/variables/typography";
-@import "global/variables/grid";
-
-@import "global/mixins/typography";
-@import "global/mixins/mq";
-
-@import "global/functions";
-
-
-/*************************************************
-*   VENDOR                                       *
-*************************************************/
-
-@import "vendor/normalize";
-
-
-/*************************************************
-*   BASE                                         *
-*************************************************/
-
-@import "base/base";
-@import "base/typography";
-
-@import "global/extends";
-
-
-/*************************************************
-*   LAYOUT                                       *
-*************************************************/
-
-@import "layout/grid";
-@import "layout/layout";
-
-
-/*************************************************
-*   MODULES                                      *
-*************************************************/
+// ==============================================/
+//  MODULES
+// ==============================================/
 // only include the modules this project calls for
 
-@import "module/menu";
-@import "module/modal";
+@import "module/menu",
+        "module/logo",
+        "module/modal";
 
+// ==============================================/
+//  GLOBAL UTILITY CLASSES & ANIMATIONS
+// ==============================================/
 
-/*************************************************
-*   STATES                                       *
-*************************************************/
-// global states, include module-specific states 
-// with their respective module
-
-@import "state/states";
-
+@import "global/utility",
+        "global/animations";
