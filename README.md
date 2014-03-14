@@ -37,13 +37,13 @@ $ sudo npm install --save-dev gulp
 
 **see gulpfile.js var imports to which to install*
 
-**to install `$ sudo npm install --save-dev <task>`*
+**to install individual tasks: `$ sudo npm install --save-dev <task>`*
 
 ### 6. Run Gulp:
 ```
 $ gulp
 ```
 
-The default task will run and *do nothing*.
+^^^ The **default** task will run.
 
 To run individual tasks, use `$ gulp <task> <othertask>`

@@ -1,7 +1,9 @@
+### Sass and Compass
 config.rb
 sass-cache
 .sass-cache
 
+### General / Gulp
 .DS_Store
 *.log
 node_modules
@@ -14,3 +16,18 @@ coverage
 sandbox
 test/out-fixtures/*
 test/watch-*.txt
+
+### OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Icon must ends with two \r.
+Icon
+
+### Thumbnails
+._*
+
+### Files that might appear on external disk
+.Spotlight-V100
+.Trashes
