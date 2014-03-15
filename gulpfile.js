@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-ruby-sass'),
-    minifyJS = require('gulp-minify-js'),
+    minifyJS = require('gulp-jsmin'),
     rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
     svgmin = require('gulp-svgmin'),
@@ -25,7 +25,7 @@ gulp.task('minify-css', function(){
 // Task to minify all js files in the js directory
 gulp.task('minify-js', function () {
     gulp.src('./js/*.js')
-        .pipe(jsmin())
+        .pipe(minifyJS())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./js/min/'));
 });
