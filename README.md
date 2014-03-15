@@ -16,7 +16,9 @@ To watch Sass with source maps and compressed style, in Terminal, type:
 $ scss --watch --sourcemap scss:css --style compressed
 ```
 
-### 2. Install [Node.js](http://nodejs.org/download/)
+##### Or continue below and don't worry about the above command.
+
+### 2. Install [Node.js](http://nodejs.org/download/):
 
 To check if Node.js is already installed type `$ npm -v` in Terminal to check version.
 
@@ -26,12 +28,7 @@ To check if Node.js is already installed type `$ npm -v` in Terminal to check ve
 $ sudo npm install -g gulp
 ```
 
-To check if Node.js is already installed type `$ gulp -v` in Terminal to check version.
-
-### 4. Install [Gulp](http://gulpjs.com/) in your project:
-```
-$ sudo npm install --save-dev gulp
-```
+To check if Gulp is already installed type `$ gulp -v` in Terminal to check version.
 
 ### 5. Install all Gulp dependencies:
 

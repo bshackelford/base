@@ -9,6 +9,8 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     sass = require('gulp-ruby-sass'),
+    minifyJS = require('gulp-minify-js'),
+    rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
     svgmin = require('gulp-svgmin'),
     csslint = require('gulp-csslint');
@@ -18,6 +20,14 @@ gulp.task('minify-css', function(){
     gulp.src('./css/*.css')
         .pipe(minifyCSS({keepSpecialComments: 0}))
         .pipe(gulp.dest('./css/'));
+});
+
+// Task to minify all js files in the js directory
+gulp.task('minify-js', function () {
+    gulp.src('./js/*.js')
+        .pipe(jsmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./js/min/'));
 });
 
 // Reload html
@@ -76,12 +86,12 @@ gulp.task('pre-process', function(){
 */
 gulp.task('default', function(){
     server.listen(35729, function (err) {
-        gulp.watch(['*.html', '*/*.html', './scss/*.scss'], function(event) {
+        gulp.watch(['*.html', '*/*.html', './scss/*.scss', './scss/*/*.scss'], function(event) {
             gulp.run('pre-process', 'csslint', 'reload');
         });
     });
 });
 
 gulp.task('production', function(){
-    gulp.run('minify-css', 'minify-img', 'minify-svg');
+    gulp.run('minify-css', 'minify-js', 'minify-img', 'minify-svg');
 });
