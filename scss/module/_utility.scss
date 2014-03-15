@@ -1,40 +1,47 @@
-// States
-.is-disabled {}
-.is-active {}
-.is-selected {}
-
-// *More* semantic clearfix
+// _More_ Semantic clearfix
 .group {
     @extend %clearfix;
 }
 
-// Spacing
+// Spacing helpers
 .mt10 { margin-top: 10px; }
-.mb10 { margin-bottom: 10px; }
 .mr10 { margin-right: 10px; }
+.mb10 { margin-bottom: 10px; }
 .ml10 { margin-left: 10px; }
 
 .mt20 { margin-top: 20px; }
-.mb20 { margin-bottom: 20px; }
 .mr20 { margin-right: 20px; }
+.mb20 { margin-bottom: 20px; }
 .ml20 { margin-left: 20px; }
 
 .mt50 { margin-top: 50px; }
-.mb50 { margin-bottom: 50px; }
 .mr50 { margin-right: 50px; }
+.mb50 { margin-bottom: 50px; }
 .ml50 { margin-left: 50px; }
 
 .pt10 { padding-top: 10px; }
-.pb10 { padding-bottop: 10px; }
 .pr10 { padding-right: 10px; }
+.pb10 { padding-bottom: 10px; }
 .pl10 { padding-left: 10px; }
 
 .pt20 { padding-top: 20px; }
-.pb20 { padding-bottop: 20px; }
 .pr20 { padding-right: 20px; }
+.pb20 { padding-bottom: 20px; }
 .pl20 { padding-left: 20px; }
 
-// Accessibility
+.pt50 { padding-top: 50px; }
+.pr50 { padding-right: 50px; }
+.pb50 { padding-bottom: 50px; }
+.pl50 { padding-left: 50px; }
+
+// Truncate text (needs width)
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Screen Readers only
 .sronly {
     position: absolute;
     overflow: hidden;
@@ -46,11 +53,11 @@
     border: 0;
 }
 
-// Prompt to update older browser (<IE8)
+// Browse Happy prompt for older browsers
 .browsehappy {
-    margin: 0;
-    padding: 1em 0;
-    background: #f3f3f3;
+    margin: 0.25em 0;
+    padding: 0.5em 0;
+    background: #E74C3C;
     color: #222;
     text-align: center;
 }

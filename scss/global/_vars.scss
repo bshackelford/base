@@ -34,7 +34,9 @@ $pad-y: 50px;
 // Media Queries
 $bp-small-max:   30em;      // 480px
 $bp-medium-min:  30.0625em; // 481px
-$bp-medium-max:  64em;      // 1024px
+$bp-medium-max:  48em;      // 768px
+$bp-marge-min:   48.0625em; // 769px
+$bp-marge-max:   64em;      // 1024px
 $bp-large-min:   64.0625em; // 1025px
 $bp-large-max:   98em;      // 1568px
 $bp-x-large-min: 98.0625em; // 1569px
