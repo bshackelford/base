@@ -1,5 +1,5 @@
 %clearfix {
-    *zoom: 1;
+    // *zoom: 1; // IE6/7 only
 
     &:before,
     &:after {

@@ -23,12 +23,12 @@ gulp.task('minify-css', function(){
         .pipe(gulp.dest('./css/'));
 });
 
-// Task to minify all css files in the css directory
+// Task to minify all js files in the js directory
 gulp.task('minify-js', function () {
     gulp.src('./js/*.js')
-        .pipe(jsmin())
+        .pipe(minifyJS())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('min'));
+        .pipe(gulp.dest('./js/min/'));
 });
 
 // Reload html

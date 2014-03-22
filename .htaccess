@@ -1,3 +1,10 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^localhost
+RewriteCond %{HTTP_HOST} !yourdomain.com$ [NC]
+RewriteRule ^(.*)$ http://yourdomain.com/$1 [R=301,L]
+
+
 <IfModule mod_deflate.c>
 
     # Compress all output labeled with one of the following MIME-types
