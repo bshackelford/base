@@ -1,11 +1,9 @@
-.menu {
+.nav {
     @extend %clearfix;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
-.menu-item {
+.nav-item {
     position: relative;
     float: left;
     width: 25%;
@@ -13,23 +11,23 @@
     > a {
         display: block;
         padding: 2em 0;
-        border: none;
-        font-family: $sans-serif;
-        font-weight: 500;
+        border: 0;
+        font-family: $font-sans-serif;
+        font-weight: $font-sans-serif-semibold;
         text-transform: uppercase;
     }
 }
 
-.submenu {
+.nav-secondary {
     position: absolute;
     display: none;
     background: red;
 }
-.submenu-item {
-    color: red;
 
+.nav-secondary-item {
+    color: red;
 }
 
-:hover > .submenu {
+:hover > .nav-secondary {
     display: block;
 }
