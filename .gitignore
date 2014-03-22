@@ -2,6 +2,7 @@
 config.rb
 sass-cache
 .sass-cache
+*.css.map
 
 ### General / Gulp
 .DS_Store
