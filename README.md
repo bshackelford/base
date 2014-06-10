@@ -50,4 +50,4 @@ $ gulp
 
 To run individual tasks, use `$ gulp <task> <othertask>`
 
-*__Production-ready__ Gulp command: `$ gulp production`*
+*__Production-ready__ Gulp command: `$ gulp prod`*
