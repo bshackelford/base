@@ -45,6 +45,9 @@
     @else if $point == medium {
         @media (min-width: $bp-medium-min) { @content; }
     }
+    @else if $point == marge {
+        @media (min-width: $bp-marge-min) { @content; }
+    }
     @else if $point == large {
         @media (min-width: $bp-large-min) { @content; }
         @media print { @content; }
