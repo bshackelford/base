@@ -1,0 +1,52 @@
+// ====================================/
+//  Variables
+// ====================================/
+
+// Primary Colors
+$black: #000;
+$white: #fff;
+
+// Secondary Colors
+$charcoal: #202020;
+
+// Site colors
+$color-primary: $black;
+$color-secondary: $white;
+
+// Links
+$link-color: $color-primary;
+$link-color-hover: lighten($color-primary, 10%);
+$link-color-active: darken($color-primary, 10%);
+
+// Type
+$font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif: Georgia, serif;
+
+$font-sans-serif-normal: 400;
+$font-sans-serif-semibold: 600;
+$font-sans-serif-bold: 700;
+$font-serif-bold: 700;
+
+// Spacing
+$pad: 3%; // must be % if using grid function
+$pad-x: 10px;
+$pad-y: 50px;
+
+// Media Queries
+$bp-480:            30em;
+$bp-481:            30.0625em;
+$bp-768:            48em;
+$bp-769:            48.0625em;
+$bp-1024:           64em;
+$bp-1025:           64.0625em;
+$bp-1568:           98em;
+$bp-1569:           98.0625em;
+
+$bp-small-max:      $bp-480;
+$bp-medium-min:     $bp-481;
+$bp-medium-max:     $bp-768;
+$bp-marge-min:      $bp-769;
+$bp-marge-max:      $bp-1024;
+$bp-large-min:      $bp-1025;
+$bp-large-max:      $bp-1568;
+$bp-x-large-min:    $bp-1569;

@@ -1,8 +1,6 @@
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -12,12 +10,13 @@ html {
 
 body {
     min-height: 100%;
-    background: $secondary-color;
+    background: $color-secondary;
     color: #222;
     font-family: $font-serif;
     @include font-size(16);
     line-height: 1.5;
-    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

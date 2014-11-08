@@ -40,7 +40,7 @@
 .pl50 { padding-left: 50px; }
 
 // Accessibility
-.sronly {
+.sr-only {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
@@ -51,8 +51,8 @@
     border: 0;
 }
 
-// Prompt to update older browser (<IE8)
-.browsehappy {
+// Prompt to update older browser (<IE9)
+.browse-happy {
     margin: 0;
     padding: 1em 0;
     background: #f3f3f3;

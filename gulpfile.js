@@ -72,11 +72,11 @@ gulp.task('csslint', function(){
         .pipe(csslint.reporter());
 });
 
-// Task that compiles scss files down to good old css
+// Task that compiles sass files down to good old css
 gulp.task('pre-process', function(){
-    gulp.src('./scss/style.scss')
+    gulp.src('./sass/style.scss')
         .pipe(watch(function(files) {
-            return files.pipe(sass({loadPath: ['./scss/'], sourcemap: true, style: "compact"}))
+            return files.pipe(sass({loadPath: ['./sass/'], sourcemap: true, style: "compact"}))
                 .pipe(prefix())
                 .pipe(gulp.dest('./css/'))
                 .pipe(livereload(server));
@@ -94,7 +94,7 @@ gulp.task('pre-process', function(){
 */
 gulp.task('default', function(){
     server.listen(35729, function (err) {
-        gulp.watch(['*.html', '*/*.html', './scss/*.scss', './scss/*/*.scss', './js/*.js'], function(event) {
+        gulp.watch(['*.html', '*/*.html', './sass/*.scss', './sass/*/*.scss', './js/*.js'], function(event) {
             gulp.run('pre-process', 'csslint', 'reload');
         });
     });
