@@ -13,7 +13,7 @@ To check if Sass is already installed type `$ sass -v` in Terminal to check vers
 To watch Sass with source maps and compressed style, in Terminal, type:
 
 ```
-$ sass --watch --sourcemap sass:css --style compressed
+$ sass --watch sass:css --style compressed
 ```
 
 ##### Or continue below and don't worry about the above command.
