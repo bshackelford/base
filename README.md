@@ -16,6 +16,12 @@ To watch Sass with source maps and compressed style, in Terminal, type:
 $ sass --watch sass:css --style compressed
 ```
 
+To just compile Sass with compressed style, in Terminal, type:
+
+```
+$ sass --update sass:css --style compressed
+```
+
 ##### Or continue below and don't worry about the above command.
 
 ### 2. Install [Node.js](http://nodejs.org/download/):
