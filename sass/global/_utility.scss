@@ -9,6 +9,11 @@
 }
 
 // Spacing
+.mt0 { margin-top:    0; }
+.mb0 { margin-bottom: 0; }
+.mr0 { margin-right:  0; }
+.ml0 { margin-left:   0; }
+
 .mt10 { margin-top: 10px; }
 .mb10 { margin-bottom: 10px; }
 .mr10 { margin-right: 10px; }
@@ -23,6 +28,11 @@
 .mb50 { margin-bottom: 50px; }
 .mr50 { margin-right: 50px; }
 .ml50 { margin-left: 50px; }
+
+.pt0 { padding-top:    0; }
+.pb0 { padding-bottom: 0; }
+.pr0 { padding-right:  0; }
+.pl0 { padding-left:   0; }
 
 .pt10 { padding-top: 10px; }
 .pb10 { padding-bottom: 10px; }

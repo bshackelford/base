@@ -7,26 +7,31 @@ h1, .h1 {
     font-weight: normal;
     line-height: 1.2;
 }
+
 h2, .h2 {
     @include font-size(32);
     font-weight: normal;
     line-height: 1.2;
 }
+
 h3, .h3 {
     @include font-size(28);
     font-weight: normal;
     line-height: 1.4;
 }
+
 h4, .h4 {
     @include font-size(24);
     font-weight: bold;
     line-height: 1.5;
 }
+
 h5, .h5 {
     @include font-size(21);
     font-weight: bold;
     line-height: 1.5;
 }
+
 h6, .h6 {
     @include font-size(16);
     font-weight: bold;

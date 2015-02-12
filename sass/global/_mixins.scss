@@ -4,10 +4,12 @@
     .wf-loading & {
         visibility: hidden;
     }
+
     .wf-active &,
     .wf-inactive & {
         visibility: visible;
     }
+
     .lt-ie9 & {
         visibility: visible !important;
     }
@@ -20,6 +22,7 @@
     line-height: 1.5;
     @include fout;
 }
+
 @mixin font-stack-headings {
     font-family: $font-sans-serif;
     font-weight: $font-sans-serif-bold;
